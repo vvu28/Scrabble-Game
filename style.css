@@ -1,0 +1,49 @@
+body{
+  padding:40px;
+}
+#board{
+    display:grid;
+    grid-template-columns: repeat(15, 40px);
+    grid-template-rows: repeat(15, 40px);
+    gap: 2px; 
+    margin: 20px;
+}
+.square {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #222;
+  background-color: burlywood;
+}
+
+.bonus-2 { background-color: #87cefa; }  /* double letter */
+.bonus-3 { background-color: #ff7f7f; }  /* triple letter */
+.bonus-4 { background-color: #ffa500; }  /* double word */
+.bonus-5 { background-color: #dc143c; }  /* triple word */
+
+.tile {
+  width: 40px;
+  height: 40px;
+  background-color: tan;
+  border: 1px solid #333;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  margin: 2px;
+}
+#blank{
+  color:tan;
+}
+#blank.selected{
+  color:white;
+}
+.tile.selected{
+  background-color: white;
+  transform: scale(1.1);
+}
